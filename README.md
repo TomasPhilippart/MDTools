@@ -26,13 +26,4 @@ RSA é um algoritmo de criptografia de dados, que deve o seu nome a três profes
 
 _O cliente consegue, por fim, descriptografar o retorno do servidor, com sua_ **_chave privada_**_._
 
-$$
-Sejam $p$ e $q$ dois numeros primos à escolha.
-Calcular $n=pq$.
-Calcular $\phi (n) = (p-1)(q-1)$.
-Escolher um inteiro $e$ tal que  $e$ e $\phi (n)$ são primos entre si.
-Determinar $d$ tal que $ed \equiv 1 (mod\;\ \phi (n) )$ (inversos)
 
-Chave publica: ($n$, $e$) usada para encriptar.
-Chave privada: ($n$, $d$) usada para desencriptar.
-$$
