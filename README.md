@@ -24,6 +24,6 @@ RSA é um algoritmo de criptografia de dados, que deve o seu nome a três profes
 > 
 > _O servidor criptografa o que será enviado para o cliente com a_ **_chave pública_** _do cliente, e envia para o cliente._
 
-_O cliente consegue, por fim, descriptografar o retorno do servidor, com sua_ **_chave privada_**_._
+>_O cliente consegue, por fim, descriptografar o retorno do servidor, com sua_ **_chave privada_**_._
 
 
