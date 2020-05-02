@@ -1,6 +1,6 @@
 # MDTools
  
-Pequeno programa em Python para facilitar os cálculos durante o algoritmo RSA.
+Pequeno programa em Python para facilitar os cálculos da disciplina de Matemática Discreta.
 
 # Comandos
 
