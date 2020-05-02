@@ -1,7 +1,4 @@
-def bissexto(year):
-    return (( year%400 == 0) or (( year%4 == 0 ) and ( year%100 != 0)))
 
-print(bissexto(2020))
 print("""
 .----------------.-------.--------.
 | Dia da semana  | Letra | Numero |
@@ -23,13 +20,10 @@ print("""
 """)
 
 
+def bissexto(year):
+    return (( year%400 == 0) or (( year%4 == 0 ) and ( year%100 != 0)))
 
-def gregoriano():
-    print("Dia D do mes de letra F do ano Y")
-    D = eval(input("Dia D: "))
-    F = eval(input("Mes de letra F: "))
-    Y = eval(input("Ano Y: "))
-
+def gregoriano(D, F, Y):
     C = 1 + ((D + F - 2) % 7)
     N = 7 - (Y - 1 + Y //4 - Y // 100 + Y // 400)%7
 
@@ -42,14 +36,9 @@ def gregoriano():
     else:
         W = 1 + ((C - N + 7) % 7)
 
-    print(f"O dia da semana, W = {W}.")
+    return W
 
-def juliano():
-    print("Dia D do mes de letra F do ano Y")
-    D = eval(input("Dia D: "))
-    F = eval(input("Mes de letra F: "))
-    Y = eval(input("Ano Y: "))
-
+def juliano(D, F, Y):
     C = 1 + ((D + F - 2) % 7)
     N = 7 - ((Y + 4 + Y // 4) % 7)
 
@@ -62,5 +51,4 @@ def juliano():
     else:
         W = 1 + ((C - N + 7) % 7)
 
-    print(f"O dia da semana, W = {W}.")
-
+    return W

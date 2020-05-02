@@ -1,4 +1,5 @@
 from func_aux import *
+from calendarios import *
 from time import sleep
 
 
@@ -7,14 +8,19 @@ print(f"\n{bcolors.HEADER}\t============ RSA TOOL ============{bcolors.ENDC}")
 while(1):
     escolha = input(f"""
         --------------{bcolors.BOLD} Menu {bcolors.ENDC}--------------
-        A: Descobrir inverso de e mod (p-1)*(q-1)
-        B: Fazer modulos rapidamente
-        C: Obter soma em base 2 de numero
-        D: Ver algoritmo RSA 
-        E: Maximo Divisor Comum
-        X: Sair
+        A) Descobrir inverso de e mod (p-1)*(q-1)
+        B) Fazer modulos rapidamente
+        C) Obter soma em base 2 de numero
+        D) Ver algoritmo RSA 
+        E) Maximo Divisor Comum
 
-Escolha: """)
+        {bcolors.BOLD}Calendarios {bcolors.ENDC}
+        F) Juliano
+        G) Gregoriano
+
+        X) Sair
+
+{bcolors.BOLD}Escolha:{bcolors.ENDC} """)
 
 
     if escolha == 'A':
@@ -51,6 +57,29 @@ Escolha: """)
         b = inputNumber("b = ")
 
         print(f"{bcolors.OKGREEN}a ⌢ b = {gcd(a,b)}{bcolors.ENDC}")
+
+    elif escolha == 'F':
+        print("Dia D do mes de letra F do ano Y")
+        D = inputNumber("D = ")
+        F = inputNumber("F = ")
+        Y = inputNumber("Y = ")
+        W = juliano(D, F, Y)
+
+        dias_da_semana = [0, "Domingo", "Segunda-feira", "Terca-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sabado"]
+        print(f"{D} dos mes de letra {F} de {Y} -> {bcolors.OKGREEN}{W}, {dias_da_semana[W]}{bcolors.ENDC}, no calendario Juliano")
+
+    elif escolha == 'G':
+        print("Dia D do mes de letra F do ano Y")
+        D = inputNumber("D = ")
+        F = inputNumber("F = ")
+        Y = inputNumber("Y = ")
+        W = gregoriano(D, F, Y)
+
+        dias_da_semana = [0, "Domingo", "Segunda-feira", "Terca-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sabado"]
+        print(f"{D} dos mes de letra {F} de {Y} -> {bcolors.OKGREEN}{W}, {dias_da_semana[W]}{bcolors.ENDC}, no calendario Gregoriano")
+
+
+
     else:
         print("Escolha nao valida, tenta de novo!")
 
