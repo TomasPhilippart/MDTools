@@ -1,4 +1,4 @@
-# RSAToolkit
+# MDTools
  
 Pequeno programa em Python para facilitar os cálculos durante o algoritmo RSA.
 
