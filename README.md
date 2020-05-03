@@ -2,16 +2,20 @@
  
 Pequeno programa em Python para facilitar os cálculos da disciplina de Matemática Discreta.
 
-# Comandos
+## Utilização
 
-    A: Descobrir inverso de e mod (p-1)*(q-1)
-    B: Fazer modulos rapidamente
-    C: Obter soma em base 2 de numero
-    D: Ver algoritmo RSA 
-    E: Maximo Divisor Comum
-    X: Sair
+Para correr o programa, `python3 mdtools.py`
 
-# RSA (Teoria)
+### Funcionalidades
+- Descobrir inverso de e mod (p-1)*(q-1)
+- Fazer modulos rapidamente
+- Obter soma em base 2 de numero
+- Ver algoritmo RSA
+- Maximo Divisor Comum
+- Calcular dia da semana (Juliano/Gregoriano
+- Determinar o dia de Páscoa (Juliano/Gregoriano)
+
+## RSA (Teoria)
 
 RSA é um algoritmo de criptografia de dados, que deve o seu nome a três professores do Instituto de Tecnologia de Massachusetts (MIT), Ronald Rivest, Adi Shamir e Leonard Adleman, fundadores da actual empresa RSA Data Security, Inc., que inventaram este algoritmo — até a data (2008) a mais bem sucedida implementação de sistemas de chaves assimétricas, e fundamenta-se em teorias clássicas dos números. É considerado dos mais seguros, já que mandou por terra todas as tentativas de quebrá-lo. Foi também o primeiro algoritmo a possibilitar criptografia e assinatura digital, e uma das grandes inovações em criptografia de chave pública.
 
