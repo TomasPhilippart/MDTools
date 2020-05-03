@@ -1,4 +1,4 @@
-# MDTools
+# MDTools :unlock:
 > Pequeno programa em Python para facilitar os cálculos da disciplina de Matemática Discreta.
 
 ## Utilização
