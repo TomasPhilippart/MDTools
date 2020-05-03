@@ -1,6 +1,5 @@
 # MDTools
- 
-Pequeno programa em Python para facilitar os cálculos da disciplina de Matemática Discreta.
+> Pequeno programa em Python para facilitar os cálculos da disciplina de Matemática Discreta.
 
 ## Utilização
 
