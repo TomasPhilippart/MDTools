@@ -6,13 +6,21 @@
 Para correr o programa, `python3 mdtools.py`
 
 ### Funcionalidades
-- Descobrir inverso de e mod (p-1)*(q-1)
-- Fazer modulos rapidamente
-- Obter soma em base 2 de numero
-- Ver algoritmo RSA
-- Maximo Divisor Comum
-- Calcular dia da semana (Juliano/Gregoriano
-- Determinar o dia de Páscoa (Juliano/Gregoriano)
+
+        A) Descobrir inverso de e mod (p-1)*(q-1)
+        B) Fazer modulos rapidamente
+        C) Obter soma em base 2 de numero
+        D) Ver algoritmo RSA 
+
+        E) Maximo Divisor Comum
+        J) Simplificar congruências
+        K) Coeficientes de Bezout
+        L) Equacoes Diofantinas
+
+        F) Juliano
+        G) Gregoriano
+        H) Pascoa Juliana
+        I) Pascoa Gregoriana
 
 ## RSA (Teoria)
 
