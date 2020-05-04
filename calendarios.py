@@ -1,3 +1,4 @@
+import math
 
 """
 .----------------.-------.--------.
@@ -31,12 +32,13 @@ def gregoriano(D, F, Y):
         FevOuJan = input("Jan/Fev? [y/n]: ")
         if FevOuJan == 'y':
             W = 1 + ((C - N + 6) % 7)
+            return (W, FevOuJan)
         else:
             W = 1 + ((C - N + 7) % 7)
+            return (W, FevOuJan)
     else:
         W = 1 + ((C - N + 7) % 7)
-
-    return (W, FevOuJan)
+        return (W, 'n')
 
 def juliano(D, F, Y):
     C = 1 + ((D + F - 2) % 7)
@@ -128,19 +130,36 @@ def pascoa_juliana(Y):
 def pascoa_gregoriana(Y):
     
     G = 1 + Y%19
-    E = (57 + 11*G - Y//100 + (Y//100)//4 + ( (Y//100) - (( (Y//100) - 17) //25) //3) )%30
+    print(f"G = {G}")
+
+
+    Mod1 = 57 + 11 * G
+    Mod2 = math.floor(Y/100)
+    Mod3 = math.floor(Mod2 / 4)
+    ModAux = Mod2 - math.floor((Mod2 - 17) / 25)
+    Mod4 = math.floor(ModAux / 3)
+
+    E = (Mod1 - Mod2 + Mod3 + Mod4) % 30
+    print(f"E0 = {E}")
     
     V = (E//24 - E//25) + G//12 * (E//25 - E//26)
+    print(f"V = {V}")
     E += V
+    print(f"E = {E}")
 
     D = 20 + (54 - E)%30
+    print(f"D = {D}")
     C = (D + 2)%7 + 1
-    N = 7 - ((Y + 4 + Y // 4) % 7)
+    print(f"C = {C}")
+    N = 7 - ((Y - 1 + Y // 4 - Y//100 + Y//400) % 7)
+    print(f"N = {N}")
 
     if C < N:
         S = D + N - C
+        print(f"S = {S}")
     else:
         S = D + 7 - (C - N)%7
+        print(f"S = {S}")
     
     return S
 
