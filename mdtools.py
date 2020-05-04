@@ -9,11 +9,18 @@ print(f"\n{bcolors.HEADER}\t============ RSA TOOL ============{bcolors.ENDC}")
 while(1):
     escolha = input(f"""
         --------------{bcolors.BOLD} Menu {bcolors.ENDC}--------------
+
+        {bcolors.BOLD}RSA{bcolors.ENDC}
         A) Descobrir inverso de e mod (p-1)*(q-1)
         B) Fazer modulos rapidamente
         C) Obter soma em base 2 de numero
         D) Ver algoritmo RSA 
+        
+        {bcolors.BOLD}Congruencias{bcolors.ENDC}
         E) Maximo Divisor Comum
+        J) Simplificar congruências
+        K) Coeficientes de Bezout
+        L) Equacoes Diofantinas
 
         {bcolors.BOLD}Calendarios{bcolors.ENDC}
         F) Juliano
@@ -52,15 +59,19 @@ while(1):
         sleep(0.2)
         exit()
     
+    # VER ALGORITMO RSA ! TO-DO
     elif escolha.upper() == 'D':
         continue
 
+    # MAXIMO DIVISOR COMUM
     elif escolha.upper() == 'E':
         a = inputNumber("a = ")
         b = inputNumber("b = ")
 
         print(f"{bcolors.OKGREEN}a ⌢ b = {gcd(a,b)}{bcolors.ENDC}")
+    
 
+    # DIA DA SEMANA JULIANO
     elif escolha.upper() == 'F':
         print("Dia D do mes de letra F do ano Y")
         D = inputNumber("D = ")
@@ -73,11 +84,10 @@ while(1):
 
         mostrar_passos = input("Mostar passos? [y/n]: ")
         if mostrar_passos == 'y':
-            print("\n")
             print(f"{bcolors.OKBLUE}A mostrar passos: {bcolors.ENDC}")
             passos_juliano(D, F, Y, FevOuJan)
 
-
+    # DIA DA SEMANA GREGORIANO
     elif escolha.upper() == 'G':
         print("Dia D do mes de letra F do ano Y")
         D = inputNumber("D = ")
@@ -90,20 +100,61 @@ while(1):
 
         mostrar_passos = input("Mostar passos? [y/n]: ")
         if mostrar_passos == 'y':
-            print("\n")
             print(f"{bcolors.OKBLUE}A mostrar passos: {bcolors.ENDC}")
             passos_gregoriano(D, F, Y, FevOuJan)
 
+    # PASCOA JULIANA
     elif escolha.upper() == 'H':
         Y = inputNumber("Y = ")
         S = pascoa_juliana(Y)
-        print(f"A pascoa de {Y} e no dia -> {bcolors.OKGREEN}{S},{bcolors.ENDC} no calendario Juliano")
+        if S > 30:
+            print(f"A pascoa de {Y} e no dia -> {bcolors.OKGREEN}{S % 31} de Abril, S = {S},{bcolors.ENDC} no calendario Juliano")
+        else:
+            print(f"A pascoa de {Y} e no dia -> {bcolors.OKGREEN}{S} de Março, S = {S},{bcolors.ENDC} no calendario Juliano")
 
+    # PASCOA GREGORIANA
     elif escolha.upper() == 'I':
         Y = inputNumber("Y = ")
         S = pascoa_gregoriana(Y)
-        print(f"A pascoa de {Y} e no dia -> {bcolors.OKGREEN}{S},{bcolors.ENDC} no calendario Gregoriana")
+        if S > 30:
+            print(f"A pascoa de {Y} e no dia -> {bcolors.OKGREEN}{S % 31} de Abril, S = {S},{bcolors.ENDC} no calendario Gregoriano")
+        else:
+            print(f"A pascoa de {Y} e no dia -> {bcolors.OKGREEN}{S} de Março, S = {S},{bcolors.ENDC} no calendario Gregoriano")
+
+    # SIMPLIFICAR CONGRUENCIAS
+    elif escolha.upper() == 'J':
+        print("ax ≡ b (mod N)")
+        a_ini = inputNumber("a = ")
+        b_ini = inputNumber("b = ")
+        n = inputNumber("mod N = ")
+
+        # to do 
+
+        print(f"{a_ini}x ≡ {b_ini} (mod {n}) <=> {bcolors.OKGREEN}x ≡ {x} (mod {n}) {bcolors.ENDC}")
+
+    # BEZOUT
+    elif escolha.upper() == 'K':
+        print("ax + by = a ⌢ b")
+        a = inputNumber("a = ")
+        b = inputNumber("b = ")
+        
+        mdc, x, y = saunderson(a, b)
+        
+        print(f"{a}x + {b}y = {mdc} => {bcolors.OKGREEN}x = {x}{bcolors.ENDC} e {bcolors.OKGREEN}y = {y}{bcolors.ENDC}")
+    
+    # DIOFANTINAS
+    elif escolha.upper() == 'L':
+        print("ax + by = c")
+        a = inputNumber("a = ")
+        b = inputNumber("b = ")
+        c = inputNumber("c = ")
+        
+        x, y = diofantina(a,b,c)
+        print(f"{a}x + {b}y = {c} => {bcolors.OKGREEN}x = {x}{bcolors.ENDC} e {bcolors.OKGREEN}y = {y}{bcolors.ENDC}.")
 
     else:
         print("Escolha nao valida, tenta de novo!")
+
+
+    
 

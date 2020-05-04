@@ -19,6 +19,16 @@ def gcd(a, b):
         a, b = b, a % b
     return a
 
+def xgcd(a, b):
+    """return (g, x, y) such that a*x + b*y = g = gcd(a, b)"""
+    x0, x1, y0, y1 = 0, 1, 1, 0
+    while a != 0:
+        (q, a), b = divmod(b, a), a
+        y0, y1 = y1, y0 - q * y1
+        x0, x1 = x1, x0 - q * x1
+    return b, x0, y0
+
+
 '''
 Euclid's extended algorithm for finding the multiplicative inverse of two numbers
 '''
@@ -98,4 +108,34 @@ def inputNumber(message):
        continue
     else:
        return userInput 
-       break 
+
+def saunderson(a, b):
+    """
+    Returns a list `result` of size 3 where:
+    Referring to the equation ax + by = gcd(a, b)
+        result[0] is gcd(a, b)
+        result[1] is x
+        result[2] is y 
+    """
+    s = 0; old_s = 1
+    t = 1; old_t = 0
+    r = b; old_r = a
+
+    while r != 0:
+        quotient = old_r//r # In Python, // operator performs integer or floored division
+        # This is a pythonic way to swap numbers
+        # See the same part in C++ implementation below to know more
+        old_r, r = r, old_r - quotient*r
+        old_s, s = s, old_s - quotient*s
+        old_t, t = t, old_t - quotient*t
+    return [old_r, old_s, old_t]
+
+def diofantina(a,b,c):
+    q,r = divmod(a,b)
+    if r == 0:
+        return ( [0, c//b] )
+    else:
+        sol = diofantina(b,r,c)
+        u = sol[0]
+        v = sol[1]
+        return ( [v, u - q*v] )
