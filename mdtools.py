@@ -26,7 +26,7 @@ while(1):
 {bcolors.BOLD}Escolha:{bcolors.ENDC} """)
 
 
-    if escolha == 'A':
+    if escolha.upper() == 'A':
         e = inputNumber("e = ")
         p = inputNumber("p = ")
         q = inputNumber("q = ")
@@ -34,7 +34,7 @@ while(1):
 
         print(f"{bcolors.OKGREEN}d = {multiplicative_inverse(e, phi)}{bcolors.ENDC}")
 
-    elif escolha == 'B':
+    elif escolha.upper() == 'B':
         print("a (mod b)")
         b = inputNumber("mod = ")
         sair = ''
@@ -43,25 +43,25 @@ while(1):
             print(f"{a} ≡ {bcolors.OKGREEN}{a%b}{bcolors.ENDC} (mod {b})")
             sair = input("Sair? [y]: ")
     
-    elif escolha == 'C':
+    elif escolha.upper() == 'C':
         n = inputNumber("Numero a decompor = ")
         print(f"{bcolors.OKGREEN}{soma_pot_2(n)}{bcolors.ENDC}")
 
-    elif escolha == 'X':
+    elif escolha.upper() == 'X':
         print(f"{bcolors.WARNING}A sair...{bcolors.ENDC}")
         sleep(0.2)
         exit()
     
-    elif escolha == 'D':
+    elif escolha.upper() == 'D':
         continue
 
-    elif escolha == 'E':
+    elif escolha.upper() == 'E':
         a = inputNumber("a = ")
         b = inputNumber("b = ")
 
         print(f"{bcolors.OKGREEN}a ⌢ b = {gcd(a,b)}{bcolors.ENDC}")
 
-    elif escolha == 'F':
+    elif escolha.upper() == 'F':
         print("Dia D do mes de letra F do ano Y")
         D = inputNumber("D = ")
         F = inputNumber("F = ")
@@ -78,7 +78,7 @@ while(1):
             passos_juliano(D, F, Y, FevOuJan)
 
 
-    elif escolha == 'G':
+    elif escolha.upper() == 'G':
         print("Dia D do mes de letra F do ano Y")
         D = inputNumber("D = ")
         F = inputNumber("F = ")
@@ -94,12 +94,12 @@ while(1):
             print(f"{bcolors.OKBLUE}A mostrar passos: {bcolors.ENDC}")
             passos_gregoriano(D, F, Y, FevOuJan)
 
-    elif escolha == 'H':
+    elif escolha.upper() == 'H':
         Y = inputNumber("Y = ")
         S = pascoa_juliana(Y)
         print(f"A pascoa de {Y} e no dia -> {bcolors.OKGREEN}{S},{bcolors.ENDC} no calendario Juliano")
 
-    elif escolha == 'I':
+    elif escolha.upper() == 'I':
         Y = inputNumber("Y = ")
         S = pascoa_gregoriana(Y)
         print(f"A pascoa de {Y} e no dia -> {bcolors.OKGREEN}{S},{bcolors.ENDC} no calendario Gregoriana")
