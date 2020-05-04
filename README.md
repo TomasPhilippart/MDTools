@@ -11,7 +11,7 @@ Para correr o programa, `python3 mdtools.py`
         B) Fazer modulos rapidamente
         C) Obter soma em base 2 de numero
         D) Ver algoritmo RSA 
-        
+
         E) Maximo Divisor Comum
         J) Simplificar congruências
         K) Coeficientes de Bezout
@@ -21,8 +21,6 @@ Para correr o programa, `python3 mdtools.py`
         G) Gregoriano
         H) Pascoa Juliana
         I) Pascoa Gregoriana
-
-        X) Sair
 
 ## RSA (Teoria)
 
