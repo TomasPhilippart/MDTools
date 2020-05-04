@@ -5,8 +5,9 @@ from time import sleep
 
 
 # ============ MAIN ============
-print(f"\n{bcolors.HEADER}\t============ RSA TOOL ============{bcolors.ENDC}")
+print(f"\n{bcolors.HEADER}\t============ MD TOOLS ============{bcolors.ENDC}")
 while(1):
+
     escolha = input(f"""
         --------------{bcolors.BOLD} Menu {bcolors.ENDC}--------------
 
@@ -32,7 +33,6 @@ while(1):
 
 {bcolors.BOLD}Escolha:{bcolors.ENDC} """)
 
-
     if escolha.upper() == 'A':
         e = inputNumber("e = ")
         p = inputNumber("p = ")
@@ -46,7 +46,7 @@ while(1):
         b = inputNumber("mod = ")
         sair = ''
         while (sair != 'y'):
-            a = inputNumber("a = ")
+            a = eval(input("a = "))
             print(f"{a} ≡ {bcolors.OKGREEN}{a%b}{bcolors.ENDC} (mod {b})")
             sair = input("Sair? [y]: ")
     
