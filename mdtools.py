@@ -27,7 +27,7 @@ while(1):
         F) Juliano
         G) Gregoriano
         H) Pascoa Juliana
-        I) Pascoa Gregoriana
+        I) Pascoa Gregoriana (step by step)
 
         X) Sair
 
