@@ -10,7 +10,7 @@ Para correr o programa, `python3 mdtools.py`
         A) Descobrir inverso de e mod (p-1)*(q-1)
         B) Fazer modulos rapidamente
         C) Obter soma em base 2 de numero
-        D) Ver algoritmo RSA 
+        D) Ver algoritmo RSA (TO-DO)
 
         E) Maximo Divisor Comum
         J) Simplificar congruências
@@ -21,6 +21,8 @@ Para correr o programa, `python3 mdtools.py`
         G) Gregoriano
         H) Pascoa Juliana
         I) Pascoa Gregoriana
+        
+        M) Algoritmo de Fleury
 
 ## RSA (Teoria)
 
