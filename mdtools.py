@@ -155,7 +155,6 @@ while(1):
     
     # DIOFANTINAS
     elif escolha.upper() == 'L':
-        call(["chmod +x diofantinas"])
         call(["./diofantinas"])
 
     elif escolha.upper() == 'M':
