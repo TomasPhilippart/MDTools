@@ -67,10 +67,10 @@ while(1):
         print("a (mod b)")
         b = inputNumber("mod = ")
         sair = ''
-        while (sair != 'y'):
+        while (sair.upper() != 'Y'):
             a = eval(input("a = "))
             print(f"{a} ≡ {bcolors.OKGREEN}{a%b}{bcolors.ENDC} (mod {b})")
-            sair = input("Sair? [y]: ")
+            sair = input("Sair? [Y/N]: ")
     
     elif escolha.upper() == 'D':
         n = inputNumber("Numero a decompor = ")
