@@ -3,24 +3,36 @@
 
 ## Utilização
 
-Para correr o programa, `python3 mdtools.py`
+Para correr o programa, `python3 MDTools.py`
 
-### Funcionalidades
+## Funcionalidades
+
+#### Algoritmo RSA ####
 
         A) Descobrir inverso de e mod (p-1)*(q-1)
         B) Fazer modulos rapidamente
         C) Obter soma em base 2 de numero
-        D) Ver algoritmo RSA 
+        D) Ver algoritmo RSA - Trabalho ainda em progresso!
+
+#### Congruências ####
 
         E) Maximo Divisor Comum
-        J) Simplificar congruências
-        K) Coeficientes de Bezout
-        L) Equacoes Diofantinas
+        F) Simplificar congruencias
+        G) Coeficientes de Bezout
+        H) Equacoes Diofantinas
 
-        F) Juliano
-        G) Gregoriano
-        H) Pascoa Juliana
-        I) Pascoa Gregoriana
+#### Calendários ####
+
+        I) Juliano
+        J) Gregoriano
+        K) Pascoa Juliana
+        L) Pascoa Gregoriana (step by step)
+
+#### Grafos ####
+
+        M) Nocoes basicas
+        N) Teoremas
+        O) Algoritmo de Fleury
 
 ## RSA (Teoria)
 
