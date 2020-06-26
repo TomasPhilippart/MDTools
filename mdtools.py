@@ -1,5 +1,6 @@
 from func_aux import *
 from calendarios import *
+from grafos import *
 from time import sleep
 
 
@@ -15,7 +16,7 @@ while(1):
         A) Descobrir inverso de e mod (p-1)*(q-1)
         B) Fazer modulos rapidamente
         C) Obter soma em base 2 de numero
-        D) Ver algoritmo RSA 
+        D) Ver algoritmo RSA
         
         {bcolors.BOLD}Congruencias{bcolors.ENDC}
         E) Maximo Divisor Comum
@@ -28,6 +29,9 @@ while(1):
         G) Gregoriano
         H) Pascoa Juliana
         I) Pascoa Gregoriana (step by step)
+
+        {bcolors.BOLD}Grafos{bcolors.ENDC}
+        M) Algoritmo de Fleury
 
         X) Sair
 
@@ -151,6 +155,9 @@ while(1):
         
         x, y = diofantina(a,b,c)
         print(f"{a}x + {b}y = {c} => {bcolors.OKGREEN}x = {x}{bcolors.ENDC} e {bcolors.OKGREEN}y = {y}{bcolors.ENDC}.")
+
+    elif escolha.upper() == 'M':
+        fleury_apl()
 
     else:
         print("Escolha nao valida, tenta de novo!")
