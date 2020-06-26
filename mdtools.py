@@ -1,6 +1,8 @@
 from func_aux import *
 from calendarios import *
 from grafos import *
+from teoremas_grafos import *
+from FFT import *
 from time import sleep
 
 
@@ -11,6 +13,8 @@ while(1):
 
     escolha = input(f"""
         --------------{bcolors.BOLD} Menu {bcolors.ENDC}--------------
+
+        N) {bcolors.BOLD}FFT{bcolors.ENDC}
 
         {bcolors.BOLD}RSA{bcolors.ENDC}
         A) Descobrir inverso de e mod (p-1)*(q-1)
@@ -32,6 +36,8 @@ while(1):
 
         {bcolors.BOLD}Grafos{bcolors.ENDC}
         M) Algoritmo de Fleury
+        O) Nocoes de Grafos
+        P) Teoremas de Grafos
 
         X) Sair
 
@@ -158,6 +164,15 @@ while(1):
 
     elif escolha.upper() == 'M':
         fleury_apl()
+
+    elif escolha.upper() == 'N':
+        fft()
+
+    elif escolha.upper() == 'O':
+        nocoes_grafos()
+
+    elif escolha.upper() == 'P':
+        teoremas_grafos()
 
     else:
         print("Escolha nao valida, tenta de novo!")
