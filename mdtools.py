@@ -4,6 +4,7 @@ from grafos import *
 from teoremas_grafos import *
 from FFT import *
 from time import sleep
+from subprocess import call
 
 
 
@@ -154,13 +155,7 @@ while(1):
     
     # DIOFANTINAS
     elif escolha.upper() == 'L':
-        print("ax + by = c")
-        a = inputNumber("a = ")
-        b = inputNumber("b = ")
-        c = inputNumber("c = ")
-        
-        x, y = diofantina(a,b,c)
-        print(f"{a}x + {b}y = {c} => {bcolors.OKGREEN}x = {x}{bcolors.ENDC} e {bcolors.OKGREEN}y = {y}{bcolors.ENDC}.")
+        call(["./diofantinas"])
 
     elif escolha.upper() == 'M':
         fleury_apl()
