@@ -21,7 +21,7 @@ while(1):
         B) Descobrir inverso de e mod (p-1)*(q-1)
         C) Fazer modulos rapidamente
         D) Obter soma em base 2 de numero
-        E) Ver algoritmo RSA
+        E) Ver algoritmo RSA - Trabalho ainda em progresso!
         
         {bcolors.BOLD}Congruencias{bcolors.ENDC}
         F) Maximo Divisor Comum
@@ -44,6 +44,7 @@ while(1):
 
 {bcolors.BOLD}Escolha:{bcolors.ENDC} """)
 
+    ###### FFT ######
 
     if escolha.upper() == 'A':
         fft()

@@ -7,32 +7,36 @@ Para correr o programa, `python3 MDTools.py`
 
 ## Funcionalidades
 
+#### Algoritmo FFT ####
+
+        A) Ver algortimo
+
 #### Algoritmo RSA ####
 
-        A) Descobrir inverso de e mod (p-1)*(q-1)
-        B) Fazer modulos rapidamente
-        C) Obter soma em base 2 de numero
-        D) Ver algoritmo RSA - Trabalho ainda em progresso!
+        B) Descobrir inverso de e mod (p-1)*(q-1)
+        C) Fazer módulos rapidamente
+        D) Obter soma em base 2 de número
+        E) Ver algoritmo RSA - Trabalho ainda em progresso!
 
 #### Congruências ####
 
-        E) Maximo Divisor Comum
-        F) Simplificar congruencias
-        G) Coeficientes de Bezout
-        H) Equacoes Diofantinas
+        F) Máximo Divisor Comum
+        G) Simplificar congruências
+        H) Coeficientes de Bézout
+        I) Equações Diofantinas
 
 #### Calendários ####
 
-        I) Juliano
-        J) Gregoriano
-        K) Pascoa Juliana
-        L) Pascoa Gregoriana (step by step)
+        J) Juliano
+        K) Gregoriano
+        L) Pascoa Juliana
+        M) Pascoa Gregoriana (step by step)
 
 #### Grafos ####
 
-        M) Nocoes basicas
-        N) Teoremas
-        O) Algoritmo de Fleury
+        N) Noções Básicas
+        O) Teoremas
+        P) Algoritmo de Fleury
 
 ## RSA (Teoria)
 
