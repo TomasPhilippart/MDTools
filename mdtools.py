@@ -4,6 +4,7 @@ from teoremas_grafos import *
 from percorrer_grafos import *
 from FFT import *
 from time import sleep
+from subprocess import call
 
 
 
@@ -20,7 +21,7 @@ while(1):
         B) Descobrir inverso de e mod (p-1)*(q-1)
         C) Fazer modulos rapidamente
         D) Obter soma em base 2 de numero
-        E) Ver algoritmo RSA - Trabalho ainda em progresso!
+        E) Ver algoritmo RSA
         
         {bcolors.BOLD}Congruencias{bcolors.ENDC}
         F) Maximo Divisor Comum
@@ -113,13 +114,8 @@ while(1):
     
     # EQUACOES DIOFANTINAS
     elif escolha.upper() == 'I':
-        print("ax + by = c")
-        a = inputNumber("a = ")
-        b = inputNumber("b = ")
-        c = inputNumber("c = ")
-        
-        x, y = diofantina(a,b,c)
-        print(f"{a}x + {b}y = {c} => {bcolors.OKGREEN}x = {x}{bcolors.ENDC} e {bcolors.OKGREEN}y = {y}{bcolors.ENDC}.")
+        call(["chmod", "+x", "diofantinas"])
+        call(["./diofantinas"])
 
 
 
