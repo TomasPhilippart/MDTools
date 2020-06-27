@@ -33,7 +33,7 @@ while(1):
         J) Juliano
         K) Gregoriano
         L) Pascoa Juliana
-        M) Pascoa Gregoriana (step by step)
+        M) Pascoa Gregoriana (passo a passo)
 
         {bcolors.BOLD}Grafos{bcolors.ENDC}
         N) Nocoes Basicas

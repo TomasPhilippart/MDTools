@@ -29,8 +29,8 @@ Para correr o programa, `python3 MDTools.py`
 
         J) Juliano
         K) Gregoriano
-        L) Pascoa Juliana
-        M) Pascoa Gregoriana (step by step)
+        L) Páscoa Juliana
+        M) Páscoa Gregoriana (passo a passo)
 
 #### Grafos ####
 
