@@ -45,18 +45,12 @@ while(1):
 {bcolors.BOLD}Escolha:{bcolors.ENDC} """)
 
 
+    if escolha.upper() == 'A':
+        fft()
 
     ###### RSA ######
 
-    if escolha.upper() == 'A':
-        e = inputNumber("e = ")
-        p = inputNumber("p = ")
-        q = inputNumber("q = ")
-        phi = (p-1)*(q-1)
-
-        print(f"{bcolors.OKGREEN}d = {multiplicative_inverse(e, phi)}{bcolors.ENDC}")
-
-    elif escolha.upper() == 'B':
+    if escolha.upper() == 'B':
         e = inputNumber("e = ")
         p = inputNumber("p = ")
         q = inputNumber("q = ")
