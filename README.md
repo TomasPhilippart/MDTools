@@ -9,14 +9,14 @@ Para correr o programa, `python3 MDTools.py`
 
 #### Algoritmo FFT ####
 
-        A) Ver algortimo
+        A) Ver algortimo FFT
 
 #### Algoritmo RSA ####
 
         B) Descobrir inverso de e mod (p-1)*(q-1)
         C) Fazer módulos rapidamente
         D) Obter soma em base 2 de número
-        E) Ver algoritmo RSA - Trabalho ainda em progresso!
+        E) Ver algoritmo RSA
 
 #### Congruências ####
 
@@ -52,5 +52,3 @@ RSA é um algoritmo de criptografia de dados, que deve o seu nome a três profes
 > _O servidor criptografa o que será enviado para o cliente com a_ **_chave pública_** _do cliente, e envia para o cliente._
 >
 >_O cliente consegue, por fim, descriptografar o retorno do servidor, com sua_ **_chave privada_**_._
-
-

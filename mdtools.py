@@ -3,10 +3,9 @@ from calendarios import *
 from teoremas_grafos import *
 from percorrer_grafos import *
 from FFT import *
+from RSA import *
 from time import sleep
 from subprocess import call
-
-
 
 # ============ MAIN ============
 print(f"\n{bcolors.HEADER}\t============ MD TOOLS ============{bcolors.ENDC}")
@@ -15,13 +14,13 @@ while(1):
     escolha = input(f"""
         --------------{bcolors.BOLD} Menu {bcolors.ENDC}--------------
         {bcolors.BOLD}
-        A) FFT{bcolors.ENDC}
+        A) Ver algoritmo FFT{bcolors.ENDC}
 
         {bcolors.BOLD}RSA{bcolors.ENDC}
         B) Descobrir inverso de e mod (p-1)*(q-1)
         C) Fazer modulos rapidamente
         D) Obter soma em base 2 de numero
-        E) Ver algoritmo RSA - Trabalho ainda em progresso!
+        E) Ver algoritmo RSA
         
         {bcolors.BOLD}Congruencias{bcolors.ENDC}
         F) Maximo Divisor Comum
@@ -56,7 +55,6 @@ while(1):
         p = inputNumber("p = ")
         q = inputNumber("q = ")
         phi = (p-1)*(q-1)
-
         print(f"{bcolors.OKGREEN}d = {multiplicative_inverse(e, phi)}{bcolors.ENDC}")
 
     elif escolha.upper() == 'C':
@@ -74,10 +72,7 @@ while(1):
     
     # VER ALGORITMO RSA ! TO-DO
     elif escolha.upper() == 'E':
-        print(f"{bcolors.WARNING}Trabalho ainda em progresso!{bcolors.ENDC}")
-        continue
-
-
+        rsa()
 
     ###### CONGRUENCIAS ######
 
