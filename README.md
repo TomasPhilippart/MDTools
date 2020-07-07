@@ -8,7 +8,7 @@
 #### Tomás Philippart
 #### Tomás Tavares
 
-### Instituto Superior Técnico - LEIC-A - Instituto Superior Técnico
+### Instituto Superior Técnico - LEIC-A
 
 ## Versão Atual: 1.0 - Lançada a 07/07/2020
 
