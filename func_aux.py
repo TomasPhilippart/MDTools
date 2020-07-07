@@ -70,10 +70,8 @@ def is_prime(num):
             return False
     return True
 
-
-def soma_pot_2(x): 
-    v = [] 
-    n = x
+def soma_pot_2_aux(x):
+    v = []
     # Converting the decimal number 
     # into its binary equivalent. 
     while (x > 0): 
@@ -88,8 +86,13 @@ def soma_pot_2(x):
         if (v[i] == 1): 
             powers = [i] + powers
 
-    display = f"{n} = "
-    display2 = "("
+    return powers
+
+def soma_pot_2(x): 
+    powers = soma_pot_2_aux(x)
+
+    display = f"{x} = "
+    display2 = "= "
 
     for i in powers:
         display += f"2^{i} + "
@@ -97,7 +100,7 @@ def soma_pot_2(x):
     for i in powers:
         display2 += f"{2**i} + "
 
-    return display[:-2] + display2[:-3] + ')'
+    return display[:-2] + display2[:-3]
 
 def inputNumber(message):
   while True:
