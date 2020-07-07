@@ -14,7 +14,7 @@ while(1):
     escolha = input(f"""
         --------------{bcolors.BOLD} Menu {bcolors.ENDC}--------------
         {bcolors.BOLD}
-        A) FFT{bcolors.ENDC}
+        A) Ver algoritmo FFT{bcolors.ENDC}
 
         {bcolors.BOLD}RSA{bcolors.ENDC}
         B) Descobrir inverso de e mod (p-1)*(q-1)
