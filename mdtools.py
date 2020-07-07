@@ -7,8 +7,21 @@ from RSA import *
 from time import sleep
 from subprocess import call
 
+# MD Tools - Versao 1.0 - 07/07/2020
+#
+# Programa criado para auxiliar diversos calculos em areas
+# lecionadas na disciplina de Matematica Discreta
+#
+# Criado por:
+# David Belchior
+# Gustavo Aguiar
+# Tomas Philippart
+# Tomas Tavares
+#
+# Instituto Superior Tecnico - LEIC-A - 1º Ano
+
 # ============ MAIN ============
-print(f"\n{bcolors.HEADER}\t============ MD TOOLS ============{bcolors.ENDC}")
+print(f"\n{bcolors.HEADER}\t============ MD TOOLS ============\n\nVersao 1.0 - 07/07/2020 - Criado por:\n\nDavid Belchior\nGustavo Aguiar\nTomas Philippart\nTomas Tavares{bcolors.ENDC}")
 while(1):
 
     escolha = input(f"""
@@ -24,20 +37,19 @@ while(1):
         
         {bcolors.BOLD}Congruencias{bcolors.ENDC}
         F) Maximo Divisor Comum
-        G) Simplificar congruencias
-        H) Coeficientes de Bezout
-        I) Equacoes Diofantinas
+        G) Coeficientes de Bezout
+        H) Equacoes Diofantinas - Trabalho ainda em progresso!
 
         {bcolors.BOLD}Calendarios{bcolors.ENDC}
-        J) Juliano
-        K) Gregoriano
-        L) Pascoa Juliana
-        M) Pascoa Gregoriana (passo a passo)
+        I) Juliano
+        J) Gregoriano
+        K) Pascoa Juliana
+        L) Pascoa Gregoriana (passo a passo)
 
         {bcolors.BOLD}Grafos{bcolors.ENDC}
-        N) Nocoes Basicas
-        O) Teoremas
-        P) Algoritmo de Fleury
+        M) Nocoes Basicas
+        N) Teoremas
+        O) Algoritmo de Fleury
 
         X) Sair
 
@@ -83,17 +95,8 @@ while(1):
 
         print(f"{bcolors.OKGREEN}a ⌢ b = {gcd(a,b)}{bcolors.ENDC}")
     
-    # SIMPLIFICAR CONGRUENCIAS
-    elif escolha.upper() == 'G':
-        print("ax ≡ b (mod N)")
-        a_ini = inputNumber("a = ")
-        b_ini = inputNumber("b = ")
-        n = inputNumber("mod N = ")
-
-        print(f"{a_ini}x ≡ {b_ini} (mod {n}) <=> {bcolors.OKGREEN}x ≡ {x} (mod {n}) {bcolors.ENDC}")
-
     # BEZOUT
-    elif escolha.upper() == 'H':
+    elif escolha.upper() == 'G':
         print("ax + by = a ⌢ b")
         a = inputNumber("a = ")
         b = inputNumber("b = ")
@@ -102,21 +105,21 @@ while(1):
         
         print(f"{a}x + {b}y = {mdc} => {bcolors.OKGREEN}x = {x}{bcolors.ENDC} e {bcolors.OKGREEN}y = {y}{bcolors.ENDC}")
     
-    # EQUACOES DIOFANTINAS
-    elif escolha.upper() == 'I':
-        call(["chmod", "+x", "diofantinas"])
-        call(["./diofantinas"])
+    # EQUACOES DIOFANTINAS - Ainda instavel
+    elif escolha.upper() == 'H':
+        print(f"{bcolors.WARNING}Trabalho ainda em progresso!{bcolors.ENDC}")
+        #call(["chmod", "+x", "diofantinas"])
+        #call(["./diofantinas"])
 
 
 
     ###### CALENDARIO ######
 
     # DIA DA SEMANA JULIANO
-    elif escolha.upper() == 'J':
-        print("Dia D do mes de letra F do ano Y")
-        D = inputNumber("D = ")
-        F = inputNumber("F = ")
-        Y = inputNumber("Y = ")
+    elif escolha.upper() == 'I':
+        D = inputNumber("Dia = ")
+        F = inputNumber("Mes = ")
+        Y = inputNumber("Ano = ")
         W, FevOuJan = juliano(D, F, Y)
 
         dias_da_semana = [0, "Domingo", "Segunda-feira", "Terca-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sabado"]
@@ -128,11 +131,10 @@ while(1):
             passos_juliano(D, F, Y, FevOuJan)
 
     # DIA DA SEMANA GREGORIANO
-    elif escolha.upper() == 'K':
-        print("Dia D do mes de letra F do ano Y")
-        D = inputNumber("D = ")
-        F = inputNumber("F = ")
-        Y = inputNumber("Y = ")
+    elif escolha.upper() == 'J':
+        D = inputNumber("Dia = ")
+        F = inputNumber("Mes = ")
+        Y = inputNumber("Ano = ")
         W, FevOuJan = gregoriano(D, F, Y)
 
         dias_da_semana = [0, "Domingo", "Segunda-feira", "Terca-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sabado"]
@@ -144,8 +146,8 @@ while(1):
             passos_gregoriano(D, F, Y, FevOuJan)
 
     # PASCOA JULIANA
-    elif escolha.upper() == 'L':
-        Y = inputNumber("Y = ")
+    elif escolha.upper() == 'K':
+        Y = inputNumber("Ano = ")
         S = pascoa_juliana(Y)
         if S > 30:
             print(f"A pascoa de {Y} e no dia -> {bcolors.OKGREEN}{S % 31} de Abril, S = {S},{bcolors.ENDC} no calendario Juliano")
@@ -153,8 +155,8 @@ while(1):
             print(f"A pascoa de {Y} e no dia -> {bcolors.OKGREEN}{S} de Março, S = {S},{bcolors.ENDC} no calendario Juliano")
 
     # PASCOA GREGORIANA
-    elif escolha.upper() == 'M':
-        Y = inputNumber("Y = ")
+    elif escolha.upper() == 'L':
+        Y = inputNumber("Ano = ")
         S = pascoa_gregoriana(Y)
         if S > 30:
             print(f"A pascoa de {Y} e no dia -> {bcolors.OKGREEN}{S % 31} de Abril, S = {S},{bcolors.ENDC} no calendario Gregoriano")
@@ -166,15 +168,15 @@ while(1):
     ###### GRAFOS ######
 
     #NOCOES BASICAS
-    elif escolha.upper() == 'N':
+    elif escolha.upper() == 'M':
         nocoes_grafos()
 
     #TEOREMAS
-    elif escolha.upper() == 'O':
+    elif escolha.upper() == 'N':
         teoremas_grafos()
 
     #ALGORITMO DE FLEURY
-    elif escolha.upper() == 'P':
+    elif escolha.upper() == 'O':
         if fleury_apl():
             print("Escolhe uma aresta incidente no vertice em causa, desde que nao seja ponte\n(ou seja, ao ser apagada, nao divide o grafo), apaga-a e repete.")
             print(f"{bcolors.WARNING}Escolhe uma ponte apenas em ultimo recurso!{bcolors.ENDC}")

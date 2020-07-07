@@ -1,6 +1,17 @@
 # MDTools :unlock:
 > Pequeno programa em Python para facilitar os cálculos da disciplina de Matemática Discreta.
 
+## Criado por:
+
+#### David Belchior
+#### Gustavo Aguiar
+#### Tomás Philippart
+#### Tomás Tavares
+
+### Instituto Superior Técnico - LEIC-A - Instituto Superior Técnico
+
+## Versão Atual: 1.0 - Lançada a 07/07/2020
+
 ## Utilização
 
 Para correr o programa, `python3 MDTools.py`
@@ -20,23 +31,22 @@ Para correr o programa, `python3 MDTools.py`
 
 #### Congruências ####
 
-        F) Máximo Divisor Comum
-        G) Simplificar congruências
-        H) Coeficientes de Bézout
-        I) Equações Diofantinas
+        F) Simplificar congruências
+        G) Coeficientes de Bézout
+        H) Equações Diofantinas
 
 #### Calendários ####
 
-        J) Juliano
-        K) Gregoriano
-        L) Páscoa Juliana
-        M) Páscoa Gregoriana (passo a passo)
+        I) Juliano
+        J) Gregoriano
+        K) Páscoa Juliana
+        L) Páscoa Gregoriana (passo a passo)
 
 #### Grafos ####
 
-        N) Noções Básicas
-        O) Teoremas
-        P) Algoritmo de Fleury
+        M) Noções Básicas
+        N) Teoremas
+        O) Algoritmo de Fleury
 
 ## RSA (Teoria)
 
