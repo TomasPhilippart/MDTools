@@ -13,6 +13,7 @@ Pequeno programa em Python para facilitar os cálculos da disciplina de Matemát
 
 ## Lançamento original - 07/07/2020
 ## Versão Atual: 1.1 - Lançada a 08/07/2020
+
 Inclui a adição de mais passos no algoritmo RSA, e é evitado o retorno ao menu inicial após input incorreto no algoritmo de Fleury e no RSA.
 
 ## Utilização
