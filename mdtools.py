@@ -7,22 +7,21 @@ from RSA import *
 from time import sleep
 from subprocess import call
 
-######################### MD Tools #########################
-#                                                          #
-# Programa criado para auxiliar diversos cálculos em áreas #
-#     lecionadas na disciplina de Matemática Discreta      #
-#                                                          #
-#                       Criado por:                        #                     
-#                     David Belchior                       #
-#                     Gustavo Aguiar                       #
-#                    Tomás Philippart                      #
-#                     Tomás Tavares                        #
-#                                                          #
-#       Instituto Superior Técnico - LEIC-A - 1º Ano       #
-#                                                          #
-#            Lançamento original - 07/07/2020              #
-#        Versão Atual: 1.2 - Lançada a 08/07/2020          #
-############################################################
+# MD Tools - Versao 1.0 - 07/07/2020
+#
+# Programa criado para auxiliar diversos calculos em areas
+# lecionadas na disciplina de Matematica Discreta
+#
+# Criado por:
+# David Belchior
+# Gustavo Aguiar
+# Tomas Philippart
+# Tomas Tavares
+#
+# Instituto Superior Tecnico - LEIC-A - 1º Ano
+#
+# Lançamento original - 07/07/2020
+# Versão Atual: 1.1 - Lançada a 08/07/2020
 
 # ============ MAIN ============
 print(f"\n{bcolors.HEADER}\t============ MD TOOLS ============\n\nVersao 1.1 - 08/07/2020 - Criado por:\n\nDavid Belchior\nGustavo Aguiar\nTomas Philippart\nTomas Tavares{bcolors.ENDC}")
@@ -79,7 +78,7 @@ while True:
         sair = ''
         while (sair.upper() != 'Y'):
             a = eval(input("a = "))
-            print(f"{a} ≡ {bcolors.OKGREEN}{a % b}{bcolors.ENDC} (mod {b})")
+            print(f"{a} ≡ {bcolors.OKGREEN}{a%b}{bcolors.ENDC} (mod {b})")
             sair = input("Sair? [Y/N]: ")
     
     elif escolha.upper() == 'D':
@@ -97,7 +96,7 @@ while True:
         a = inputNumber("a = ")
         b = inputNumber("b = ")
 
-        print(f"{bcolors.OKGREEN}a  ⌢  b = {gcd(a,b)}{bcolors.ENDC}")
+        print(f"{bcolors.OKGREEN}a ⌢ b = {gcd(a,b)}{bcolors.ENDC}")
     
     # ALGORITMO DE SAUNDERSON / COEFICIENTES DE BEZOUT
     elif escolha.upper() == 'G':
@@ -111,7 +110,7 @@ while True:
     
     # EQUACOES DIOFANTINAS
     elif escolha.upper() == 'H':
-        call(["gcc", "-o", "diofantinas", "eq_diofantinas.c"])
+        call(["gcc", "-o", "diofantinas", "diofantinas.c"])
         call(["./diofantinas"])
 
 
