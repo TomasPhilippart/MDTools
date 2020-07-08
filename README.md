@@ -12,10 +12,10 @@ Pequeno programa em Python para facilitar os cálculos da disciplina de Matemát
 ### Instituto Superior Técnico - LEIC-A - 1º Ano
 
 ## Lançamento original - 07/07/2020
-## Versão Atual: 1.2 - Lançada a 08/07/2020
+## Versão Atual: 1.2.1 - Lançada a 08/07/2020
 
 Inclui a adição de mais passos no algoritmo RSA, e é evitado o retorno ao menu inicial após input incorreto no algoritmo de Fleury e no RSA.
-Inclui a adição de uma ferramenta para resolução das equações diofantinas.
+Inclui a adição de uma ferramenta para resolução das equações diofantinas (1.2.1 - correção das translações).
 
 ## Utilização
 
