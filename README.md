@@ -1,5 +1,6 @@
 # MDTools :unlock:
-> Pequeno programa em Python para facilitar os cálculos da disciplina de Matemática Discreta.
+
+Pequeno programa em Python para facilitar os cálculos da disciplina de Matemática Discreta.
 
 ## Criado por:
 
@@ -8,9 +9,10 @@
 #### Tomás Philippart
 #### Tomás Tavares
 
-### Instituto Superior Técnico - LEIC-A
+### Instituto Superior Técnico - LEIC-A - 1º Ano
 
-## Versão Atual: 1.0 - Lançada a 07/07/2020
+## Lançamento original - 07/07/2020
+## Versão Atual: 1.1 - Lançada a 08/07/2020
 
 ## Utilização
 
@@ -24,7 +26,7 @@ Para correr o programa, `python3 MDTools.py`
 
 #### Algoritmo RSA ####
 
-        B) Descobrir inverso de e mod (p-1)*(q-1)
+        B) Descobrir inverso de e mod (p-1) * (q-1)
         C) Fazer módulos rapidamente
         D) Obter soma em base 2 de número
         E) Ver algoritmo RSA
@@ -32,7 +34,7 @@ Para correr o programa, `python3 MDTools.py`
 #### Congruências ####
 
         F) Simplificar congruências
-        G) Coeficientes de Bézout
+        G) Algoritmo de Saunderson e Coeficientes de Bézout
         H) Equações Diofantinas
 
 #### Calendários ####
