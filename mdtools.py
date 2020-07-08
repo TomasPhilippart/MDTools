@@ -19,10 +19,13 @@ from subprocess import call
 # Tomas Tavares
 #
 # Instituto Superior Tecnico - LEIC-A - 1º Ano
+#
+# Lançamento original - 07/07/2020
+# Versão Atual: 1.1 - Lançada a 08/07/2020
 
 # ============ MAIN ============
-print(f"\n{bcolors.HEADER}\t============ MD TOOLS ============\n\nVersao 1.0 - 07/07/2020 - Criado por:\n\nDavid Belchior\nGustavo Aguiar\nTomas Philippart\nTomas Tavares{bcolors.ENDC}")
-while(1):
+print(f"\n{bcolors.HEADER}\t============ MD TOOLS ============\n\nVersao 1.1 - 08/07/2020 - Criado por:\n\nDavid Belchior\nGustavo Aguiar\nTomas Philippart\nTomas Tavares{bcolors.ENDC}")
+while True:
 
     escolha = input(f"""
         --------------{bcolors.BOLD} Menu {bcolors.ENDC}--------------
@@ -37,7 +40,7 @@ while(1):
         
         {bcolors.BOLD}Congruencias{bcolors.ENDC}
         F) Maximo Divisor Comum
-        G) Coeficientes de Bezout
+        G) Algoritmo de Saunderson e Coeficientes de Bezout
         H) Equacoes Diofantinas - Trabalho ainda em progresso!
 
         {bcolors.BOLD}Calendarios{bcolors.ENDC}
@@ -95,7 +98,7 @@ while(1):
 
         print(f"{bcolors.OKGREEN}a ⌢ b = {gcd(a,b)}{bcolors.ENDC}")
     
-    # BEZOUT
+    # ALGORITMO DE SAUNDERSON / COEFICIENTES DE BEZOUT
     elif escolha.upper() == 'G':
         print("ax + by = a ⌢ b")
         a = inputNumber("a = ")
@@ -186,7 +189,7 @@ while(1):
     ###### SAIDA ######
     elif escolha.upper() == 'X':
         print(f"{bcolors.WARNING}A sair...{bcolors.ENDC}")
-        sleep(0.2)
+        sleep(0.5)
         exit()
 
 
