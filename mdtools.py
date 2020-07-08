@@ -41,7 +41,7 @@ while True:
         {bcolors.BOLD}Congruencias{bcolors.ENDC}
         F) Maximo Divisor Comum
         G) Algoritmo de Saunderson e Coeficientes de Bezout
-        H) Equacoes Diofantinas - Trabalho ainda em progresso!
+        H) Equacoes Diofantinas
 
         {bcolors.BOLD}Calendarios{bcolors.ENDC}
         I) Juliano
@@ -108,11 +108,10 @@ while True:
         
         print(f"{a}x + {b}y = {mdc} => {bcolors.OKGREEN}x = {x}{bcolors.ENDC} e {bcolors.OKGREEN}y = {y}{bcolors.ENDC}")
     
-    # EQUACOES DIOFANTINAS - Ainda instavel
+    # EQUACOES DIOFANTINAS
     elif escolha.upper() == 'H':
-        print(f"{bcolors.WARNING}Trabalho ainda em progresso!{bcolors.ENDC}")
-        #call(["chmod", "+x", "diofantinas"])
-        #call(["./diofantinas"])
+        call(["gcc", "-o", "diofantinas", "eq_diofantinas.c"])
+        call(["./diofantinas"])
 
 
 
