@@ -9,7 +9,7 @@ from subprocess import call
 
 ######################### MD Tools #########################
 #                                                          #
-# Programa criado para auxiliar diversos cálculos em areas #
+# Programa criado para auxiliar diversos cálculos em áreas #
 #     lecionadas na disciplina de Matemática Discreta      #
 #                                                          #
 #                       Criado por:                        #                     
