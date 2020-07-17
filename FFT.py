@@ -97,7 +97,7 @@ def processar_vetor(vetor):
     d1f1_b = [f1_b[0], f1_b[1] * Complexo(0, 1)]
     print()
     print("\033[94mD1F1(-1)\033[0m [ {} ] = [ 1  0 ]  [ 1   1 ] [ {} ] = [ \033[92m{}\033[0m ]".format(vetor[2], vetor[2], d1f1_b[0]))
-    print("         [ {} ]   [ 0  i ]  [ 1  -1 ] [ {} ]   [ \033[92m{}\033[0m ]".format(vetor[3], vetor[3], d1f1_b[1]))
+    print("       [ {} ]   [ 0  i ]  [ 1  -1 ] [ {} ]   [ \033[92m{}\033[0m ]".format(vetor[3], vetor[3], d1f1_b[1]))
 
     final = [f1_c[0] + d1f1_b[0], f1_c[1] + d1f1_b[1], f1_c[0] - d1f1_b[0], f1_c[1] - d1f1_b[1]]
     print()

@@ -72,7 +72,7 @@ def teoremas_grafos():
 
     #Relacao de Euler
     print(f"{bcolors.OKBLUE}-= Teorema (Relacao de Euler) =-{bcolors.ENDC}")
-    print("Um grafo planar de p vertices, q arestas e r regioes respeita a relacao:\n p + q = r + 2.\n")
+    print("Um grafo planar de p vertices, q arestas e r regioes respeita a relacao:\n p + r = q + 2.\n")
 
     #Teorema de dimensao de grafos planares
     print(f"{bcolors.OKBLUE}-= Teorema de dimensao de grafos planares =-{bcolors.ENDC}")

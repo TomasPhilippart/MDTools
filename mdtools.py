@@ -9,8 +9,8 @@ from subprocess import call
 
 # MD Tools - Versao 1.0 - 07/07/2020
 #
-# Programa criado para auxiliar diversos calculos em areas
-# lecionadas na disciplina de Matematica Discreta
+# Programa criado para auxiliar diversos cálculos em áreas
+# lecionadas na disciplina de Matemática Discreta
 #
 # Criado por:
 # David Belchior
@@ -18,13 +18,13 @@ from subprocess import call
 # Tomas Philippart
 # Tomas Tavares
 #
-# Instituto Superior Tecnico - LEIC-A - 1º Ano
+# Instituto Superior Técnico - LEIC-A - 1º Ano
 #
 # Lançamento original - 07/07/2020
-# Versão Atual: 1.1 - Lançada a 08/07/2020
+# Versão Atual: 1.2.2 - Lançada a 17/07/2020
 
 # ============ MAIN ============
-print(f"\n{bcolors.HEADER}\t============ MD TOOLS ============\n\nVersao 1.1 - 08/07/2020 - Criado por:\n\nDavid Belchior\nGustavo Aguiar\nTomas Philippart\nTomas Tavares{bcolors.ENDC}")
+print(f"\n{bcolors.HEADER}\t============ MD TOOLS ============\n\nVersao 1.2.2 - 17/07/2020 - Criado por:\n\nDavid Belchior\nGustavo Aguiar\nTomas Philippart\nTomas Tavares{bcolors.ENDC}")
 while True:
 
     escolha = input(f"""
@@ -77,7 +77,7 @@ while True:
         b = inputNumber("mod = ")
         sair = ''
         while (sair.upper() != 'Y'):
-            a = eval(input("a = "))
+            a = inputNumber(input("a = "))
             print(f"{a} ≡ {bcolors.OKGREEN}{a%b}{bcolors.ENDC} (mod {b})")
             sair = input("Sair? [Y/N]: ")
     
@@ -85,7 +85,7 @@ while True:
         n = inputNumber("Numero a decompor = ")
         print(f"{bcolors.OKGREEN}{soma_pot_2(n)}{bcolors.ENDC}")
     
-    # VER ALGORITMO RSA ! TO-DO
+    # VER ALGORITMO RSA
     elif escolha.upper() == 'E':
         rsa()
 
