@@ -73,13 +73,13 @@ int main()
 
     printf("\n==========/ TRANSLAÇÕES POSSIVEIS /==========\n\n");
     printf("Este passo remete mais aos problemas da vida real, onde os valores a procurar tendem a ser positivos.\n");
-    printf("Assim, descobriremos um t € z que nos aproxime ao máximo dos coeficientes positivos\n");
+    printf("Assim, descobriremos um t € Z que nos aproxime ao máximo de uma solução particular apropriada ao problema.\n");
 
     int x0 = bx * (c/d);
     int y0 = by * (c/d);
     int x1 = b/d;
     int y1 = -a/d;
-    int t = 1, one_neg;
+    int t = 1;
 
     /* Solução particular ambos positivos */
     /* Assume-se que os x1 e y1 são negativos */
