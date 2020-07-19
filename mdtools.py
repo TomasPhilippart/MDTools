@@ -135,8 +135,12 @@ while True:
     # DIA DA SEMANA GREGORIANO
     elif escolha.upper() == 'J':
         D = inputNumber("Dia = ")
-        F = inputNumber("Mes = ")
+        M = inputNumber("Mes = ")
         Y = inputNumber("Ano = ")
+
+        # ADDGBEGCFADF
+        F = escolheMes(M)
+
         W, FevOuJan = gregoriano(D, F, Y)
 
         dias_da_semana = [0, "Domingo", "Segunda-feira", "Terca-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sabado"]

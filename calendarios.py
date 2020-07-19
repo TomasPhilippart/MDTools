@@ -56,6 +56,23 @@ def juliano(D, F, Y):
 
     return (W,FevOuJan)
 
+# ADDGBEGCFADF
+# 144725736146
+def escolheMes(M):
+    return {
+        1: 1,
+        2: 4,
+        3: 4,
+        4: 7,
+        5: 2,
+        6: 5,
+        7: 7,
+        8: 3,
+        9: 6,
+        10: 1,
+        11: 4,
+        12: 6,
+    }[M]
 
 def passos_gregoriano(D, F, Y, FevOuJan):
     print(f"{Y} // 4 = {Y//4}")
