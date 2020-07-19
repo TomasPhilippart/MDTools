@@ -152,7 +152,7 @@ while True:
         Y = inputNumber("Ano = ")
         S = pascoa_juliana(Y)
         if S > 30:
-            print(f"A pascoa de {Y} e no dia -> {bcolors.OKGREEN}{S % 32} de Abril, S = {S},{bcolors.ENDC} no calendario Juliano")
+            print(f"A pascoa de {Y} e no dia -> {bcolors.OKGREEN}{S % 31} de Abril, S = {S},{bcolors.ENDC} no calendario Juliano")
         else:
             print(f"A pascoa de {Y} e no dia -> {bcolors.OKGREEN}{S} de Março, S = {S},{bcolors.ENDC} no calendario Juliano")
 
