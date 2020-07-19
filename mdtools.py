@@ -7,25 +7,24 @@ from RSA import *
 from time import sleep
 from subprocess import call
 
-######################### MD TOOLS #########################
-#                                                          # 
-# Instituto Superior Técnico - LEIC-A - 1º Ano             #
-#                                                          #
-# Lançamento original - 07/07/2020                         #
-# Versão Atual: 1.2.2 - Lançada a 17/07/2020               #
-#                                                          #
-# Programa criado para auxiliar diversos cálculos em áreas #
-# lecionadas na disciplina de Matemática Discreta          #
-#                                                          #
-# Criado por:                                              #
-# David Belchior                                           #
-# Gustavo Aguiar                                           #
-# Tomás Philippart                                         #
-# Tomás Tavares                                            #
-############################################################
+# MD Tools - Versao 1.0 - 07/07/2020
+#
+# Programa criado para auxiliar diversos calculos em areas
+# lecionadas na disciplina de Matematica Discreta
+#
+# Criado por:
+# David Belchior
+# Gustavo Aguiar
+# Tomas Philippart
+# Tomas Tavares
+#
+# Instituto Superior Tecnico - LEIC-A - 1º Ano
+#
+# Lançamento original - 07/07/2020
+# Versão Atual: 1.1 - Lançada a 08/07/2020
 
 # ============ MAIN ============
-print(f"\n{bcolors.HEADER}\t============ MD TOOLS ============\n\nVersao 1.2.2 - 17/07/2020 - Criado por:\n\nDavid Belchior\nGustavo Aguiar\nTomas Philippart\nTomas Tavares{bcolors.ENDC}")
+print(f"\n{bcolors.HEADER}\t============ MD TOOLS ============\n\nVersao 1.1 - 08/07/2020 - Criado por:\n\nDavid Belchior\nGustavo Aguiar\nTomas Philippart\nTomas Tavares{bcolors.ENDC}")
 while True:
 
     escolha = input(f"""
@@ -78,7 +77,7 @@ while True:
         b = inputNumber("mod = ")
         sair = ''
         while (sair.upper() != 'Y'):
-            a = inputNumber(input("a = "))
+            a = eval(input("a = "))
             print(f"{a} ≡ {bcolors.OKGREEN}{a%b}{bcolors.ENDC} (mod {b})")
             sair = input("Sair? [Y/N]: ")
     
@@ -86,7 +85,7 @@ while True:
         n = inputNumber("Numero a decompor = ")
         print(f"{bcolors.OKGREEN}{soma_pot_2(n)}{bcolors.ENDC}")
     
-    # VER ALGORITMO RSA
+    # VER ALGORITMO RSA ! TO-DO
     elif escolha.upper() == 'E':
         rsa()
 
@@ -153,7 +152,7 @@ while True:
         Y = inputNumber("Ano = ")
         S = pascoa_juliana(Y)
         if S > 30:
-            print(f"A pascoa de {Y} e no dia -> {bcolors.OKGREEN}{S % 31} de Abril, S = {S},{bcolors.ENDC} no calendario Juliano")
+            print(f"A pascoa de {Y} e no dia -> {bcolors.OKGREEN}{S % 32} de Abril, S = {S},{bcolors.ENDC} no calendario Juliano")
         else:
             print(f"A pascoa de {Y} e no dia -> {bcolors.OKGREEN}{S} de Março, S = {S},{bcolors.ENDC} no calendario Juliano")
 
@@ -161,7 +160,7 @@ while True:
     elif escolha.upper() == 'L':
         Y = inputNumber("Ano = ")
         S = pascoa_gregoriana(Y)
-        if S > 30:
+        if S > 31:
             print(f"A pascoa de {Y} e no dia -> {bcolors.OKGREEN}{S % 31} de Abril, S = {S},{bcolors.ENDC} no calendario Gregoriano")
         else:
             print(f"A pascoa de {Y} e no dia -> {bcolors.OKGREEN}{S} de Março, S = {S},{bcolors.ENDC} no calendario Gregoriano")

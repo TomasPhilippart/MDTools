@@ -58,7 +58,12 @@ int main()
     } else if (b < 0) {
         by = -by;
     }
-    printf("\nO máximo divisor comum de %d e %d é %d. Obtém-se assim: \n", a, b, d);
+    if (c % d != 0) {
+        printf("É condição necessária %d ⌢ %d dividir %d, mas %d não divide %d, logo esta equação diofantina não tem solução.", a, b, c, d, c);
+        return 0;
+    }
+    printf("\nDado que %d ⌢ %d = %d, e %d|%d, a equação diofantina tem solução!\n", a, b, d, d, c);
+    printf("O máximo divisor comum de %d e %d é %d. Obtém-se assim: \n", a, b, d);
     printf("%d = %d * (%d) + %d * (%d)\n", d, bx, a, by, b);
     printf("\nO que nos dá coeficientes de Bézout %d e %d relativamente a %d e %d, donde:\n", bx, by, a, b);
     printf("x = %d * %d/%d = %d, t € Z    ||    y = %d * %d/%d = %d, t € Z\nDe referir que a expressão acima é uma solução particular.\n", bx, c, d, (bx * (c/d)), by, c, d, (by * (c/d)));
