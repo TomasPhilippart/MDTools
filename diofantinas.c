@@ -66,7 +66,7 @@ int main()
     printf("O máximo divisor comum de %d e %d é %d. Obtém-se assim: \n", a, b, d);
     printf("%d = %d * (%d) + %d * (%d)\n", d, bx, a, by, b);
     printf("\nO que nos dá coeficientes de Bézout %d e %d relativamente a %d e %d, donde:\n", bx, by, a, b);
-    printf("x = %d * %d/%d = %d, t € Z    ||    y = %d * %d/%d = %d, t € Z\nDe referir que a expressão acima é uma solução particular.\n", bx, c, d, (bx * (c/d)), by, c, d, (by * (c/d)));
+    printf("x0 = %d * %d/%d = %d    ||    y0 = %d * %d/%d = %d\nDe referir que a expressão acima é uma solução particular.\n", bx, c, d, (bx * (c/d)), by, c, d, (by * (c/d)));
     printf("\nA solução geral, de acordo com o Teorema 43, pág 58, é:\n");
     printf("x = %d + %d/%dt    e    y = %d - %d/%dt, t€Z\n", (bx * (c/d)), b, d, (by * (c/d)), a, d);
     printf("\nOu seja, \nx = %d + (%d)t, t € Z    ||    y = %d + (%d)t, t € Z\n", (bx * (c/d)), b/d, (by * (c/d)), -a/d);
