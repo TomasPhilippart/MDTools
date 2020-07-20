@@ -2,9 +2,25 @@
 
 Pequeno programa em Python para facilitar os cálculos da disciplina de Matemática Discreta.
 
+## Criado por:
+
+#### David Belchior
+#### Gustavo Aguiar
+#### Tomás Philippart
+#### Tomás Tavares
+
+### Instituto Superior Técnico - LEIC-A - 1º Ano
+
+## Lançamento original - 07/07/2020
+## Versão Atual: 1.2.3 - Lançada a 19/07/2020
+
+**Pequenas correções e alterações nas ferramentas dos calendários e das equações diofantinas.**
+
+Para mais informações relativamente a versões anteriores do programa, consulta o ficheiro `UPDATE-LOG.md`.
+
 ## Utilização
 
-Para correr o programa, `python3 MDTools.py`
+Para correr o programa, escreve `python3 MDTools.py` na linha de comandos do Ubuntu na pasta MDTools, ou abre diretamente, com o Python, o mesmo ficheiro.
 
 ## Funcionalidades
 
