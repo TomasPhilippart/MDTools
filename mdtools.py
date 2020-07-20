@@ -7,24 +7,25 @@ from RSA import *
 from time import sleep
 from subprocess import call
 
-# MD Tools - Versao 1.0 - 07/07/2020
-#
-# Programa criado para auxiliar diversos calculos em areas
-# lecionadas na disciplina de Matematica Discreta
-#
-# Criado por:
-# David Belchior
-# Gustavo Aguiar
-# Tomas Philippart
-# Tomas Tavares
-#
-# Instituto Superior Tecnico - LEIC-A - 1º Ano
-#
-# Lançamento original - 07/07/2020
-# Versão Atual: 1.1 - Lançada a 08/07/2020
+######################### MD TOOLS #########################
+#                                                          #
+# Instituto Superior Técnico - LEIC-A - 1º Ano             #
+#                                                          #
+# Lançamento original: 07/07/2020                          #
+# Versão Atual: 1.2.3 - Lançada a 19/07/2020               #
+#                                                          #
+# Programa criado para auxiliar diversos cálculos em áreas #
+# lecionadas na disciplina de Matemática Discreta          #
+#                                                          #
+# Criado por:                                              #
+# David Belchior                                           #
+# Gustavo Aguiar                                           #
+# Tomás Philippart                                         #
+# Tomás Tavares                                            #
+############################################################
 
 # ============ MAIN ============
-print(f"\n{bcolors.HEADER}\t============ MD TOOLS ============\n\nVersao 1.1 - 08/07/2020 - Criado por:\n\nDavid Belchior\nGustavo Aguiar\nTomas Philippart\nTomas Tavares{bcolors.ENDC}")
+print(f"\n{bcolors.HEADER}\t============ MD TOOLS ============\n\nVersao 1.2.3 - 19/07/2020 - Criado por:\n\nDavid Belchior\nGustavo Aguiar\nTomas Philippart\nTomas Tavares{bcolors.ENDC}")
 while True:
 
     escolha = input(f"""
