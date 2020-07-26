@@ -18,6 +18,8 @@ Pequeno programa em Python para facilitar os cálculos da disciplina de Matemát
 
 Pedimos desculpa a quem utilizou esta ferramenta para o algoritmo RSA, pois, caso contrário, o resultado não corresponderia ao produto dos fatores precedentes.
 
+**Alterações menores na apresentação do algoritmo FFT.**
+
 Para mais informações relativamente a versões anteriores do programa, consulta o ficheiro `UPDATE-LOG.md`.
 
 ## Utilização
