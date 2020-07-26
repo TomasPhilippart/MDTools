@@ -9,7 +9,7 @@ def rsa_aux(block, x, N):
     print(soma_pot_2(x))
     powers = soma_pot_2_aux(x)
     max_power = powers[0]
-    nums_cong = []
+    nums_cong = [block]
     num_cong_ant = block
     total = block
 

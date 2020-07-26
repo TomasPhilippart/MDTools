@@ -12,9 +12,11 @@ Pequeno programa em Python para facilitar os cálculos da disciplina de Matemát
 ### Instituto Superior Técnico - LEIC-A - 1º Ano
 
 ## Lançamento original - 07/07/2020
-## Versão Atual: 1.2.3 - Lançada a 19/07/2020
+## Versão Atual: 1.2.4 - Lançada a 26/07/2020
 
-**Pequenas correções e alterações nas ferramentas dos calendários e das equações diofantinas.**
+**Corrigida a apresentação do fator de expoente 1 no produto das congruências no algoritmo RSA (o qual era necessário para a correção dos cálculos).**
+
+Pedimos desculpa a quem utilizou esta ferramenta para o algoritmo RSA, pois, caso contrário, o resultado não corresponderia ao produto dos fatores precedentes.
 
 Para mais informações relativamente a versões anteriores do programa, consulta o ficheiro `UPDATE-LOG.md`.
 

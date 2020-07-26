@@ -1,3 +1,6 @@
+####Versão 1.2.4 (26/07/2020)
+Corrigida a apresentação do fator de expoente 1 no produto das congruências no algoritmo RSA (o qual era necessário para a correção dos cálculos).
+
 ####Versão 1.2.3 (19/07/2020)
 Pequenas correções e alterações nas ferramentas dos calendários e das equações diofantinas.
 
