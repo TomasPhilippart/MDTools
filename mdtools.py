@@ -12,7 +12,7 @@ from subprocess import call
 # Instituto Superior Técnico - LEIC-A - 1º Ano             #
 #                                                          #
 # Lançamento original: 07/07/2020                          #
-# Versão Atual: 1.2.3 - Lançada a 19/07/2020               #
+# Versão Atual: 1.2.4 - Lançada a 26/07/2020               #
 #                                                          #
 # Programa criado para auxiliar diversos cálculos em áreas #
 # lecionadas na disciplina de Matemática Discreta          #
@@ -25,7 +25,7 @@ from subprocess import call
 ############################################################
 
 # ============ MAIN ============
-print(f"\n{bcolors.HEADER}\t============ MD TOOLS ============\n\nVersao 1.2.3 - 19/07/2020 - Criado por:\n\nDavid Belchior\nGustavo Aguiar\nTomas Philippart\nTomas Tavares{bcolors.ENDC}")
+print(f"\n{bcolors.HEADER}\t============ MD TOOLS ============\n\nVersao 1.2.4 - 26/07/2020 - Criado por:\n\nDavid Belchior\nGustavo Aguiar\nTomas Philippart\nTomas Tavares{bcolors.ENDC}")
 while True:
 
     escolha = input(f"""
