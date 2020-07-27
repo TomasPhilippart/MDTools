@@ -66,7 +66,7 @@ while True:
 
     ###### RSA ######
 
-    if escolha.upper() == 'B':
+    elif escolha.upper() == 'B':
         e = inputNumber("e = ")
         p = inputNumber("p = ")
         q = inputNumber("q = ")
