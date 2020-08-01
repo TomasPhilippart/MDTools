@@ -12,13 +12,15 @@ Pequeno programa em Python para facilitar os cálculos da disciplina de Matemát
 ### Instituto Superior Técnico - LEIC-A - 1º Ano
 
 ## Lançamento original - 07/07/2020
-## Versão Atual: 1.2.4 - Lançada a 26/07/2020
+## Versão Atual: 1.3 - Lançada a 01/08/2020
 
-**Corrigida a apresentação do fator de expoente 1 no produto das congruências no algoritmo RSA (o qual era necessário para a correção dos cálculos).**
+**Ao terminar o uso de uma ferramenta, o programa perguntará se o utilizador pretende voltar a usá-la: nesse caso, repetirá a execução da ferramenta; caso contrário, perguntará se pretende que o programa seja encerrado, e em caso negativo, retornará ao menu principal.**
 
-Pedimos desculpa a quem utilizou esta ferramenta para o algoritmo RSA, pois, caso contrário, o resultado não corresponderia ao produto dos fatores precedentes.
+Esta alteração permite agilizar o uso repetido da mesma ferramenta, sem que seja necessário retornar sempre ao menu principal. Além disso, permite também encerrar o programa de forma mais rápida.
 
-**Alterações menores na apresentação do algoritmo FFT.**
+**Correção de um bug no comando C que não permitia fazer qualquer congruência.**
+
+**Alterações menores no funcionamento e na apresentação global do programa.**
 
 Para mais informações relativamente a versões anteriores do programa, consulta o ficheiro `UPDATE-LOG.md`.
 
@@ -35,7 +37,7 @@ Para correr o programa, escreve `python3 MDTools.py` na linha de comandos do Ubu
 #### Algoritmo RSA ####
 
         B) Descobrir inverso de e mod (p-1) * (q-1)
-        C) Fazer módulos rapidamente
+        C) Fazer congruências rapidamente
         D) Obter soma em base 2 de número
         E) Ver algoritmo RSA
 

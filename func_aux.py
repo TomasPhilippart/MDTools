@@ -1,3 +1,5 @@
+from time import sleep
+
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -142,3 +144,8 @@ def diofantina(a,b,c):
         u = sol[0]
         v = sol[1]
         return ( [v, u - q*v] )
+
+def sair():
+    print(f"{bcolors.OKBLUE}A sair...{bcolors.ENDC}")
+    sleep(0.5)
+    exit()
