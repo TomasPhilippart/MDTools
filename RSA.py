@@ -65,4 +65,3 @@ def rsa():
 
         else: #Input incorreto
             print(f"{bcolors.WARNING}Input incorreto, tenta de novo!{bcolors.ENDC}")
-            continue
