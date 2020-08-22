@@ -2,27 +2,6 @@
 
 Pequeno programa em Python para facilitar os cálculos da disciplina de Matemática Discreta.
 
-## Criado por:
-
-#### David Belchior
-#### Gustavo Aguiar
-#### Tomás Philippart
-#### Tomás Tavares
-
-### Instituto Superior Técnico - LEIC-A - 1º Ano
-
-## Lançamento original - 07/07/2020
-## Versão Atual: 1.3 - Lançada a 01/08/2020
-
-**Ao terminar o uso de uma ferramenta, o programa perguntará se o utilizador pretende voltar a usá-la: nesse caso, repetirá a execução da ferramenta; caso contrário, perguntará se pretende que o programa seja encerrado, e em caso negativo, retornará ao menu principal.**
-
-Esta alteração permite agilizar o uso repetido da mesma ferramenta, sem que seja necessário retornar sempre ao menu principal. Além disso, permite também encerrar o programa de forma mais rápida.
-
-**Correção de um bug no comando C que não permitia fazer qualquer congruência.**
-
-**Alterações menores no funcionamento e na apresentação global do programa.**
-
-Para mais informações relativamente a versões anteriores do programa, consulta o ficheiro `UPDATE-LOG.md`.
 
 ## Utilização
 
