@@ -7,7 +7,7 @@ Pequeno programa em Python para facilitar os cálculos da disciplina de Matemát
 
 ## Utilização
 
-Para correr o programa, escreve `python3 MDTools.py` na linha de comandos do Ubuntu na pasta src, ou abre diretamente, com o Python, o mesmo ficheiro.
+Para correr o programa, escreve `python3 MDTools.py` na linha de comandos na pasta src, ou abre diretamente, com o Python, o mesmo ficheiro.
 
 ## Contribuições
 
