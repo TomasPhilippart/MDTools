@@ -2,7 +2,9 @@
 
 Pequeno programa em Python para facilitar os cálculos da disciplina de Matemática Discreta.
 
-
+## Aviso ⚠️
+> Este programa não foi concebido para ser usado de forma desonesta, i.e. em exames/testes. A utilização prevista e recomendada é como material de estudo. Qualquer utilização desonesta e contra o [compromisso de honra](https://sartre.tecnico.ulisboa.pt/codigo-honra/) é condenada pelos criados e contribuidores deste programa.
+>  
 ## Utilização
 
 Para correr o programa, escreve `python3 MDTools.py` na linha de comandos do Ubuntu na pasta src, ou abre diretamente, com o Python, o mesmo ficheiro.
